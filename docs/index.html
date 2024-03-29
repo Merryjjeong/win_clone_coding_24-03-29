@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>여성문화 네트워크 모작</title>
+
+    <!-- 웹사이트가 모바일 장치에서 적절하게 보이고 작동하도록 조절 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- 제이쿼리 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- 테일윈드 불러오기 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- 스와이퍼 불러오기 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- AOS 라이브러리 불러오기 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- 공통 JS 연결 -->
+    <script defer src="./script/script.js"></script>
+
+    <!-- 폰트 적용 -->
+    <link rel="stylesheet" href="style/font.css" />
+
+    <!-- 공통 css 연결 -->
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="sec-header nav-pc mx-auto">
+        <div class="logo">
+          <a href="#">
+            <img src="./image/logo_w.png" alt="여성문화네트워크 로고" />
+          </a>
+        </div>
+        <div class="hd-nav flex-1">
+          <ul class="flex justify-center">
+            <li>
+              <a href="">WIN소개</a>
+              <ul>
+                <li>
+                  <a href="">인사말</a>
+                </li>
+                <li>
+                  <a href="">개요</a>
+                </li>
+                <li>
+                  <a href="">연혁</a>
+                </li>
+                <li>
+                  <a href="">오시는길</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="">WIN사업</a>
+              <ul>
+                <li>
+                  <a href="">문화산업</a>
+                </li>
+                <li>
+                  <a href="">캠페인</a>
+                </li>
+                <li>
+                  <a href="">WIN문화포럼</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="">WIN문화</a>
+              <ul>
+                <li>
+                  <a href="">문화TV</a>
+                </li>
+                <li>
+                  <a href="">문화공간</a>
+                </li>
+                <li>
+                  <a href="">웹진</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="">WIN광장</a>
+              <ul>
+                <li>
+                  <a href="">공지사항</a>
+                </li>
+                <li>
+                  <a href="">포럼</a>
+                </li>
+                <li>
+                  <a href="">공시정보</a>
+                </li>
+                <li>
+                  <a href="">보도자료</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="">후원소개</a>
+              <ul>
+                <li>
+                  <a href="">후원안내</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="hd-right">
+          <div class="nav-btn">
+            <div class="line-box">
+              <div class="dot"></div>
+              <div class="line"></div>
+            </div>
+            <div class="line"></div>
+            <div class="line-box">
+              <div class="line"></div>
+              <div class="dot"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sec-header nav-mo mx-auto">
+        <div class="logo">
+          <a href="#">
+            <img src="./image/logo_w.png" alt="여성문화네트워크 로고" />
+          </a>
+        </div>
+
+        <div class="hd-right">
+          <div class="nav-btn">
+            <div class="line-box">
+              <div class="dot"></div>
+              <div class="line"></div>
+            </div>
+            <div class="line"></div>
+            <div class="line-box">
+              <div class="line"></div>
+              <div class="dot"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <aside id="sitemap">
+      <div class="sitemap-bg">
+        <div class="bg-list">
+          <div style="background-image: url(image/full_left_bg.jpg)"></div>
+        </div>
+      </div>
+      <div class="sitemap-menu">
+        <div class="site-menu01">
+          <ul>
+            <li>
+              <a href="#">WIN소개</a>
+              <div class="site-menu02">
+                <ul>
+                  <li>
+                    <a href="#">인사말</a>
+                  </li>
+                  <li>
+                    <a href="#">개요</a>
+                  </li>
+                  <li>
+                    <a href="#">연혁</a>
+                  </li>
+                  <li>
+                    <a href="#">오시는길</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#">WIN사업</a>
+              <div class="site-menu02">
+                <ul>
+                  <li>
+                    <a href="#">문화산업</a>
+                    <div class="site-menu03">
+                      <ul>
+                        <li><a href="#">양성평등문화상</a></li>
+                        <li><a href="#">미래를 이끌어 갈 미래지도자상</a></li>
+                        <li><a href="#">양성평등교육진흥원 공모사업</a></li>
+                        <li><a href="#">역대수상자</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#">캠페인</a>
+                    <div class="site-menu03">
+                      <ul>
+                        <li><a href="#">히포시 캠페인</a></li>
+                        <li><a href="#">역대 사업</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#">WIN문화포럼</a>
+                    <div class="site-menu03">
+                      <ul>
+                        <li><a href="#">WIN문화포럼</a></li>
+                        <li><a href="#">포럼 웹진</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#">WIN문화</a>
+              <div class="site-menu02">
+                <ul>
+                  <li>
+                    <a href="#">문화TV</a>
+                  </li>
+                  <li>
+                    <a href="#">문화공간</a>
+                  </li>
+                  <li>
+                    <a href="#">웹진</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#">WIN광장</a>
+              <div class="site-menu02">
+                <ul>
+                  <li>
+                    <a href="#">공지사항</a>
+                  </li>
+                  <li>
+                    <a href="#">포럼</a>
+                  </li>
+                  <li>
+                    <a href="#">공시정보</a>
+                  </li>
+                  <li>
+                    <a href="#">보도자료</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#">후원안내</a>
+              <div class="site-menu02">
+                <ul>
+                  <li>
+                    <a href="#">후원안내</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="sitemap-close">
+        <a href="#"></a>
+      </div>
+    </aside>
+
+    <section class="sec-centent">
+      <div class="main-visual">
+        <div class="visual-img inner">
+          <a href="#">
+            <img src="./image/maindata172309_0.jpg" alt="메인사진" />
+            <p class="visual-txt">
+              <span> "올해의 양성평등 문화상" </span>
+            </p>
+          </a>
+        </div>
+      </div>
+      <div class="main-win">
+        <div class="inner">
+          <h3
+            data-aos="fade-right"
+            data-aos-duration="1500"
+            data-aos-easing="ease"
+            class="aos-init aos-animate"
+          >
+            <strong>W</strong>omen & Culture
+            <br />
+            <strong>I</strong>n <strong>N</strong>etwork
+          </h3>
+          <p
+            data-aos="fade-left"
+            data-aos-duration="1500"
+            data-aos-easing="ease"
+            class="aos-init aos-animate"
+          >
+            사단법인 여성문화네트워크는 여성정론지 여성신문사에서 문화를 통한
+            소통과 나눔을 위해
+            <br />
+            2009년 설립한 사단법인체로서 문화체육관광부 등록단체입니다.
+          </p>
+        </div>
+      </div>
+      <div class="main-business">
+        <div class="inner">
+          <div class="main-tit">
+            <h2>WIN 사업</h2>
+            <p>
+              WIN은 우리들이 사는 세상을 좀 더 아름답게 가꾸고자 하는 사람들이
+              모이는 곳입니다.
+            </p>
+          </div>
+        </div>
+        <div
+          class="swiper swiper-container aos-init aos-animate"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+          data-aos-easing="ease"
+        >
+          <div class="swiper-wrapper">
+            <div class="swiper-slide" style="width: 1324px">
+              <div class="win-img">
+                <img src="./image/win_business_img01.png" alt="비즈니스01" />
+              </div>
+              <div class="win-txt">
+                <h3>
+                  문화사업
+                  <small> Cultural Business </small>
+                </h3>
+                <p>
+                  양성평등문화상, 미래를 이끌어갈 여성지도자상, 양성평등교육
+                  진흥원 공모사업 등 여성발전 기본법이 양성평등 기본법으로
+                  개정되면서 실질적인 양성평등 실현 정책을 목표로 나아가고
+                  있습니다.
+                </p>
+                <a href="#" class="more-btn">
+                  <span> VIEW MORE </span>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide" style="width: 1324px">
+              <div class="win-img">
+                <img src="./image/win_business_img02.png" alt="비즈니스02" />
+              </div>
+              <div class="win-txt">
+                <h3>
+                  캠페인
+                  <small> Campaign </small>
+                </h3>
+                <p>
+                  2014년 유엔 여성에서 시작된 글로벌 캠페인이 시작되어
+                  2015년부터 여성신문에서 히포시코리아 운동본부를 만들어
+                  캠페인을 진행하고 있습니다. 히포시 캠페인을 통하여 사회의
+                  양성평등의 수준을 높이고 있습니다.
+                </p>
+                <a href="#" class="more-btn">
+                  <span> VIEW MORE </span>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide" style="width: 1324px">
+              <div class="win-img">
+                <img src="./image/win_business_img03.png" alt="비즈니스03" />
+              </div>
+              <div class="win-txt">
+                <h3>
+                  포럼
+                  <small> Forum </small>
+                </h3>
+                <p>
+                  여성문화포럼 WIN은 2012년부터 여성문화네트워크가
+                  문화예술전문가와 문화를 사랑하는 사람들의 소통과 나눔을 위해
+                  창립하였습니다.
+                </p>
+                <a href="#" class="more-btn">
+                  <span> VIEW MORE </span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="pagination-container">
+            <div class="swiper-pagination swiper-pagination-fraction"></div>
+            <div class="swiper-pagination2 swiper-pagination-progressbar"></div>
+          </div>
+        </div>
+      </div>
+      <div class="main-culture">
+        <div class="inner">
+          <div class="main-tit">
+            <h2>문화공간</h2>
+            <p>
+              문화적 가치를 존중하고 개인의 다양성과 차이를 인정하는
+              양성평등사회 구현을 목표로 합니다.
+            </p>
+          </div>
+        </div>
+        <div
+          class="swiper swiper-container aos-init aos-animate"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+          data-aos-easing="ease"
+        >
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#">
+                <img src="./image/culture01.jpg" alt="문화01" />
+                <h3>인터뷰</h3>
+                <p>
+                  [인터뷰] 양성평등과 문화예술을 [잇-다] / 유혜미 가구디자이너
+                </p>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <img src="./image/culture02.jpg" alt="문화02" />
+                <h3>인터뷰</h3>
+                <p>[인터뷰] 양성평등과 문화예술을 [잇-다] / 이지나 연출가</p>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <img src="./image/culture03.jpg" alt="문화03" />
+                <h3>전시공연</h3>
+                <p>[전시공연] 양성평등주간기념 특별전시 <젠더의 틈> 둘러보기</p>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <img src="./image/culture04.jpg" alt="문화04" />
+                <h3>전시공연</h3>
+                <p>양성평등주간 기념 전시 <<젠더의 틈>> 작가소개 2탄</p>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <img src="./image/culture05.jpg" alt="문화05" />
+                <h3>전시공연</h3>
+                <p>양성평등주간 기념 전시 <<젠더의 틈>> 작가소개 1탄</p>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <img src="./image/culture06.jpg" alt="문화06" />
+                <h3>전시공연</h3>
+                <p>양성평등주간 기념 전시 <<젠더의 틈>> 비평문</p>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <img src="./image/culture07.jpg" alt="문화07" />
+                <h3>전시공연</h3>
+                <p>양성평등주간 기념 전시 <<젠더의 틈>> 부대행사 소개</p>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <img src="./image/culture08.jpg" alt="문화08" />
+                <h3>전시공연</h3>
+                <p>양성평등주간 기념 전시 <<젠더의 틈>></p>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <img src="./image/culture09.jpg" alt="문화08" />
+                <h3>전시공연</h3>
+                <p>[전시공연] 한양 여성, 문 밖을 나서다: 일하는 여성들</p>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <img src="./image/culture10.jpg" alt="문화10" />
+                <h3>문화소식</h3>
+                <p>세상에 없던 새로운 이야기 구연 예능 <오늘도 주인공></p>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-pagination-container">
+            <div class="swiper-pagination2 swiper-pagination-progressbar"></div>
+            <a href="#" class="more-btn">
+              <span>VIEW MORE</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="main-news">
+        <div class="inner">
+          <div class="main-tit">
+            <h2>WIN소식</h2>
+            <p>(사)여성·문화네트워크의 소식 및 정보를 알려드립니다.</p>
+          </div>
+          <div
+            class="main-cont aos-init aos-animate"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-easing="ease"
+          >
+            <div class="main-notice">
+              <h3>
+                공지사항
+                <a href="#" class="more-btn">
+                  <span>VIEW MORE</span>
+                </a>
+              </h3>
+              <ul>
+                <li>
+                  <a href="#">
+                    <h4>
+                      2023 제16회 올해의 양성평등문화상 주인공을 찾습니다!
+                      (~6/30 까지)
+                    </h4>
+                    <p>
+                      제16회 올해의 양성평등문화상 주인공을 찾습니다!&nbsp;접수
+                      기간 : 2023년 6월 30일까지!접수 방법
+                      :&nbsp;http://www.networkwin.org/business/receive.phpor
+                      wincb@womennews.co.kr로 접수&nbsp;문의 :
+                      wincb@womennews.co.kr/ 02-2036-9214/74&nbsp;
+                    </p>
+                    <p class="date">
+                      <i class="fa-regular fa-clock"></i>
+                      2023-06-18
+                    </p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="main-webzine">
+              <div class="swiper swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img src="./image/maindata321932_0.png" alt="메인웹진" />
+                      <p>양성평등문화예술 웹진</p>
+                    </a>
+                  </div>
+                </div>
+                <div class="pagination-container">
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+            </div>
+            <div class="main-banner">
+              <div class="swiper swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img src="./image/maindata292002_0.jpg" alt="메인배너" />
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img src="./image/maindata292002_0.jpg" alt="메인배너" />
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-btn-group">
+                  <div class="swiper-button swiper-button-prev"></div>
+                  <div class="swiper-button swiper-button-next"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="sec-footer">
+      <div class="ft-left flex-1">
+        <p>
+          <span>
+            <strong>(사)여성 · 문화네트워크</strong>
+          </span>
+          <span>대표 : 박선이</span>
+          <span>사업자번호 : 104-82-10918 </span>
+        </p>
+        <p>
+          <span>TEL : 02-2036-9214</span>
+          <span>E-MAIL : wincb@womennews.co.kr</span>
+          <br />
+          <span>주소 : 서울특별시 종로구 삼일대로 447 부남빌딩 8층</span>
+        </p>
+        <p class="copy">
+          COPYRIGHT(C)
+          <strong>2022 (사) 여성 문화네트워크.</strong>
+          ALL RIGHTS RESERVED
+        </p>
+      </div>
+      <div class="ft-right flex-1">
+        <div class="ft-family">
+          <img src="./image/ft-logo01.png" alt="풋바로고1" />
+          <img src=".image/ft-logo02.png" alt="풋바로고2" />
+          <img src="./image/ft-logo03.png" alt="풋바로고3" />
+        </div>
+        <div class="ft-logo">
+          <a href="#">
+            <img src="./image/ft-logo.png" alt="풋바메인로고" />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <button id="top_btn">
+      <i class="fa-solid fa-arrow-up-long"></i>
+    </button>
+  </body>
+
+  <script>
+    AOS.init();
+  </script>
+</html>
